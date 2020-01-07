@@ -22,7 +22,8 @@
   },
   "node-red": {
     "nodes": {
-      "base-node": "./node/base-node.js"
+      "base": "./nodes/base.js",
+      "credentials": "./nodes/base-credentials.js"
     }
   },
   "homepage": "https://github.com/kuetsuhara/node-red-custom-node-mock#readme",
