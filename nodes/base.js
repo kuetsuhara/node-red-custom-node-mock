@@ -3,16 +3,17 @@ module.exports = function (RED) {
     RED.nodes.createNode(this, config);
 
     // get login data
-    this.login = RED.nodes.getNode(config.login)
-    if (!this.login) {
-      node.status({
-        fill: 'red',
-        shape: 'dot',
-        text: 'Credentials error'
-      })
-      node.error('No credentials specified')
-      return
-    }
+    // if you use crednetial, uncomment
+    // this.login = RED.nodes.getNode(config.login)
+    // if (!this.login) {
+    //   node.status({
+    //     fill: 'red',
+    //     shape: 'dot',
+    //     text: 'Credentials error'
+    //   })
+    //   node.error('No credentials specified')
+    //   return
+    // }
 
     var node = this;
 

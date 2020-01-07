@@ -4,7 +4,7 @@
     color: '#a6bbcf',
     defaults: {
       name: { value: "" },
-      login: { type: "base-credentials" }
+      // login: { type: "base-credentials" } // if you use crednetial, uncomment
     },
     inputs: 1,
     outputs: 1,
@@ -16,14 +16,16 @@
 </script>
 
 <script type="text/x-red" data-template-name="base-node">
+  <!-- if you use crednetial, uncomment
   <div class="form-row">
     <label for="node-input-login"><i class="fa fa-user"></i> Log in as</label>
     <input type="text" id="node-input-login">
   </div>
-  <div class="form-row">
-    <label for="node-input-name"><i class="icon-tag"></i> Name</label>
-    <input type="text" id="node-input-name" placeholder="Name">
-  </div>
+  -->
+<div class="form-row">
+  <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+  <input type="text" id="node-input-name" placeholder="Name">
+</div>
 </script>
 
 <script type="text/x-red" data-help-name="base-node">
