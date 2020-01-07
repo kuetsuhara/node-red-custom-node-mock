@@ -5,14 +5,14 @@ If you make Node-RED custom node, use these base files.
 これからNode-REDのカスタムノード を作る方は、参考にでもダウンロードしてでも気軽に使ってみてください。
 
 # 使い方
-・package.json
-・nodes配下
-・test配下
+* *package.json
+* nodes配下
+* test配下
 を自身のプロジェクトにコピーしてください。
 
 nodes配下には
-・baseペア
-・base-credentialsペアがあります。
+* baseペア
+* base-credentialsペアがあります。
 
 base-credentialsは、保持しておきたい情報や、ID/PASSのようなアカウント情報を保持しておく場合に活用します。
 baseペア内にコメントアウトしてある部分を解除すれば、活用可能になります。
