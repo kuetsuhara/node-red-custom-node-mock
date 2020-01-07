@@ -1,3 +1,5 @@
+const Util = require("../lib/util.js")
+
 module.exports = function (RED) {
   function BaseNode(config) {
     RED.nodes.createNode(this, config);
@@ -19,7 +21,10 @@ module.exports = function (RED) {
 
     // input action
     node.on('input', function (msg) {
-      msg.payload = "Hi i am base node!";
+      var util = new Util()
+      var result = util.joinString("hoo", "bar")
+
+      msg.payload = result;
       node.send(msg);
     });
 
